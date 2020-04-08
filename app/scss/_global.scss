@@ -33,3 +33,38 @@ body {
     margin: 0 auto;
     padding: 0 15px;
 }
+
+.item-avatar {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: $purple;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-right: 8px;
+}
+
+.item-author {
+    font-size: 15px;
+    color: #000;
+    margin-right: 20px;
+}
+
+.item-category {
+    color: $purple;
+    position: relative;
+    padding-left: 25px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        background-image: url(../images/icons/wordpress.png);
+        width: 16px;
+        height: 16px;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+}
