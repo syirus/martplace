@@ -263,6 +263,7 @@
     max-width: 362px;
     text-align: center;
     padding: 40px 35px 45px 35px;
+    margin-bottom: 115px;
 
     &-img {
         display: inline-block;
@@ -290,6 +291,193 @@
 
 // start weekly-products
 
+.weekly-products {
+    background-color: $grey;
+    padding: 120px 0;
+    position: relative;
 
+    &__title {
+        font-size: 30px;
+        color: #000;
+        background-color: #fff;
+        border-radius: 4px;
+        padding: 40px 0 40px 30px;
+        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+        margin-bottom: 45px;
+    }
+
+    &__slider {
+        .slick-arrow {
+            position: absolute;
+            border: none;
+            background-color: transparent;
+            color: #fff;
+            width: 55px;
+            height: 45px;
+            background-color: $purple;
+            outline: none;
+        }
+
+        .slick-prev {
+            top: -125px;
+            right: 87px;
+            border-radius: 30px 0 0 30px;
+        }
+
+        .slick-next {
+            top: -125px;
+            right: 42px;
+            border-radius: 0 30px 30px 0;
+        }
+    }
+
+}
+
+.slider-item {
+    display: flex;
+    box-shadow: 0px 2px 30px 0px rgba(147, 155, 168, 0.1);
+    border-radius: 4px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__img {
+        display: block;
+        width: 555px;
+        height: 450px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    &__content {
+        max-width: 585px;
+        background-color: #fff;
+        padding: 45px 60px 25px 50px;
+    }
+
+    &__title {
+        font-size: 24px;
+        font-family: $med;
+        color: #000;
+        margin-bottom: 10px;
+    }
+
+    &__caption {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    &__avatar {
+        display: block;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: $purple;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        margin-right: 8px;
+    }
+
+    &__author {
+        font-size: 15px;
+        color: #000;
+        margin-right: 20px;
+    }
+
+    &__category {
+        color: $purple;
+        position: relative;
+        padding-left: 25px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            background-image: url(../images/icons/wordpress.png);
+            width: 16px;
+            height: 16px;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+        }
+    }
+
+    &__text {
+        margin-bottom: 30px;
+    }
+
+    &__tags {
+        display: flex;
+        margin-bottom: 44px;
+
+        span {
+            font-size: 15px;
+            color: #868c96;
+            background-color: #f1f3f6;
+            border-radius: 14px;
+            padding: 0 17px;
+        }
+
+        span+span {
+            margin-left: 7px;
+        }
+    }
+
+    &__line {
+        height: 1px;
+        background-color: #ececec;
+        margin-bottom: 23px;
+    }
+
+    &__bottom {
+        display: flex;
+        font-size: 15px;
+    }
+
+    &__price {
+        font-family: $med;
+        color: #fff;
+        background-color: $blue;
+        padding: 0 18px;
+        border-radius: 14px;
+        margin-right: 19px;
+    }
+
+    &__like {
+        padding-left: 26px;
+        position: relative;
+        margin-right: 19px;
+
+        &::before {
+            font-family: $icons;
+            content: '\e813';
+            color: $purple;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+        }
+    }
+
+    &__orders {
+        padding-left: 23px;
+        color: $blue;
+        position: relative;
+
+        &::before {
+            font-family: $icons;
+            content: '\e82e';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+        }
+    }
+}
 
 // end weekly-products
