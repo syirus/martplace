@@ -5,5 +5,7 @@ $(function () {
         nextArrow: '<button type="button" class="slick-arrow slick-next"><img src="images/content/slider/next.png" alt=""></button>',
     });
 
+    var mixer = mixitup('.newest-products__inner-box');
+
 
 });

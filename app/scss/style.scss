@@ -316,6 +316,7 @@
             height: 45px;
             background-color: $purple;
             outline: none;
+            cursor: pointer;
         }
 
         .slick-prev {
@@ -537,10 +538,12 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        margin-bottom: 25px;
     }
 
     &__item {
         max-width: 360px;
+        margin-bottom: 30px;
     }
 
     &__item-img {
@@ -577,6 +580,8 @@
         background-color: #fff;
         padding-top: 25px;
         padding-left: 30px;
+        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+        border-radius: 4px;
     }
 
     &__item-title {
@@ -601,11 +606,12 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 15px 30px;
+        padding: 15px 30px 15px 0;
     }
 
     &__item-bottom-left {
         display: flex;
+        align-items: center;
     }
 
     &__item-price {
@@ -614,8 +620,51 @@
         margin-right: 10px;
         background-color: #e6f1fd;
         color: $blue;
-        padding: 5px 18px;
+        padding: 5px 25px;
         border-radius: 20px;
+    }
+
+    &__item-like {
+        font-size: 15px;
+        position: relative;
+        padding-left: 22px;
+
+        &::before {
+            font-family: $icons;
+            content: '\e813';
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    &__item-orders {
+        font-size: 15px;
+        color: $blue;
+        position: relative;
+        padding-left: 25px;
+
+        &::before {
+            font-family: $icons;
+            content: '\e82e';
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    &__bottom-btn {
+        text-align: center;
+
+        button {
+            border: none;
+            color: #fff;
+            background-color: $blue;
+            padding: 22px 33px;
+            border-radius: 30px;
+            outline: none;
+            cursor: pointer;
+        }
     }
 }
 
